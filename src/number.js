@@ -2,5 +2,9 @@ function Fibonacci(){
 };
 
 Fibonacci.prototype.getNumber = function(number){
-  return 0;
+  if(number !== undefined && number == 1){
+    return 1;
+  } else {
+    return 0;
+  }
 }
