@@ -34,4 +34,10 @@ describe("Fibonacci", function(){
       expect(fibonacci.getNumber(6)).toEqual(8);
     });
   });
+
+  describe("incorrect input", function(){
+    it("should raise an error if given number is less than 0", function(){
+      expect(fibonacci.getNumber(-5)).toThrow(new Error('Negative input'))
+    });
+  });
 });

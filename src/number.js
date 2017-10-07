@@ -2,6 +2,9 @@ function Fibonacci(){
 };
 
 Fibonacci.prototype.getNumber = function(number){
+  if(number < 0){
+    throw new Error('Negative input')
+  } else {
   var i;
   var resultsArray = [];
     for (i = 0; i <= number; i++) {
@@ -14,4 +17,5 @@ Fibonacci.prototype.getNumber = function(number){
       }
     }
   return resultsArray[number];
+  }
 };
