@@ -2,9 +2,16 @@ function Fibonacci(){
 };
 
 Fibonacci.prototype.getNumber = function(number){
-  if(number !== undefined && number < 2){
-    return number;
-  } else {
-    return number - 1;
-  }
-}
+  var i;
+  var resultsArray = [];
+    for (i = 0; i <= number; i++) {
+      if (i === 0) {
+        resultsArray.push(0);
+      } else if (i === 1) {
+        resultsArray.push(1);
+      } else {
+        resultsArray.push(resultsArray[i - 2] + resultsArray[i - 1]);
+      }
+    }
+  return resultsArray[number];
+};

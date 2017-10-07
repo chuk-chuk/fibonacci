@@ -28,4 +28,10 @@ describe("Fibonacci", function(){
       expect(fibonacci.getNumber(3)).toEqual(2);
     });
   });
+
+  describe("sixth number", function(){
+    it("should return 8", function(){
+      expect(fibonacci.getNumber(6)).toEqual(8);
+    });
+  });
 });
