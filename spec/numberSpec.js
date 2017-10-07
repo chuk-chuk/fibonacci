@@ -18,8 +18,14 @@ describe("Fibonacci", function(){
   });
 
   describe("third number", function(){
-   it("should return 1", function(){
+    it("should return 1", function(){
      expect(fibonacci.getNumber(2)).toEqual(1);
-   });
- });
+    });
+  });
+
+  describe("fourth number", function(){
+    it("should return 2", function(){
+      expect(fibonacci.getNumber(3)).toEqual(2);
+    });
+  });
 });
